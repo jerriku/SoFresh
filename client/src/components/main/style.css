@@ -1,0 +1,46 @@
+.home-header {
+    background: #eaeaea;
+    height: 200px;
+}
+
+body {
+    background: #d9d9d9;
+}
+
+.home-header h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.pro-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.pro-item {
+    list-style: none;
+}
+
+.pro-item p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-bar {
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-item {
+    color: #fff;
+    background: #484848;
+    list-style: none;
+    padding: 20px 5px;
+    text-align: center;
+    width: 100%;
+}

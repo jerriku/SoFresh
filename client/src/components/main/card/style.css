@@ -1,0 +1,21 @@
+.recipe-card {
+    display: flex;
+    margin: 1px 0;
+}
+
+.recipe-img {
+    height: 150px;
+    width: 150px;
+}
+
+.recipe-desc {
+    height: 150px;
+}
+
+.recipe-desc h3 {
+    font-size: 1rem;
+}
+
+.recipe-desc p {
+    font-size: 0.8rem;
+}

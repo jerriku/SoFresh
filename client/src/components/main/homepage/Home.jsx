@@ -1,15 +1,17 @@
-import Navbar from "../Navbar";
+import Navbar from '../Navbar';
+import RecipeCard from '../card/RecipeCard';
 import '../style.css';
+import firstFruit  from '../../../media/fruits-1.svg';
+import secondFruit from '../../../media/fruits-2.svg';
+import thirdFruit  from '../../../media/fruits-3.svg';
+import fourthFruit from '../../../media/fruits-4.svg';
 
 export default function Home() {
-    const firstFruit  = require("../../../media/fruits-1.svg");
-    const secondFruit = require("../../../media/fruits-2.svg");
-    const thirdFruit  = require("../../../media/fruits-3.svg");
-    const fourthFruit = require("../../../media/fruits-4.svg");
 
     return (
         <>
             <header className="home-header">
+                <div class="header-image"></div>
                 <h1>SoFresh</h1>
             </header>
             <main>
@@ -31,6 +33,10 @@ export default function Home() {
                         <p>best quality</p>
                     </li>
                 </ul>
+                <div>
+                    <h2>Recommended</h2>
+                    <RecipeCard amount={2}/>
+                </div>
             </main>
             <Navbar />
         </>

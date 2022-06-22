@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from '../form/Login';
 import Register from '../form/Register';
 import Home from '../main/homepage/Home';
+import '../form/style.css';
 
 export default function App() {
     const [registered, setRegistered] = useState(false);
@@ -10,8 +11,11 @@ export default function App() {
     function loginForm() {
         return (
             <>
+            <button id="skip-btn" onClick={() => document.location.href = '/home-page'}>Skip</button>
+            <div className="login-form">
                 <Login />
-                <button onClick={() => setRegistered(!registered)}>Sign up</button>
+                <button id="su-btn" className="input-btn" onClick={() => setRegistered(!registered)}>Sign up</button>
+            </div>
             </>
         )
     }
@@ -19,8 +23,10 @@ export default function App() {
     function registerForm() {
         return (
             <>
-                <button onClick={() => setRegistered(!registered)}>back</button>
+            <button onClick={() => setRegistered(!registered)}>back</button>
+            <div className="register-form">
                 <Register />
+            </div>
             </>
         )
     }

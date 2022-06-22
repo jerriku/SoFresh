@@ -1,3 +1,5 @@
+import './style.css';
+
 export default function Login() {
     function loginCheck() {
         document.location.href = '/home-page';
@@ -6,14 +8,14 @@ export default function Login() {
     return (
         <>
             <h1>SoFresh</h1>
-            <div>
-                <input placeholder="Email" />
+            <div className="form">
+                <input className="form-input" placeholder="Email" />
                 <br />
-                <input placeholder="Password" />
+                <input className="form-input" placeholder="Password" />
                 <br />
                 <a href="">Forgot your password?</a>
                 <br />
-                <button onClick={loginCheck}>Sign in</button>
+                <button className="input-btn" onClick={loginCheck}>Sign in</button>
             </div>
         </>
     );

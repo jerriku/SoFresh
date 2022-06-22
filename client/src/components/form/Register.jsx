@@ -1,11 +1,11 @@
 export default function Register() {
     return (
         <div>
-            <input placeholder="Email" />
+            <input className="form-input" placeholder="Email" />
             <br />
-            <input placeholder="Password" />
+            <input className="form-input" placeholder="Password" />
             <br />
-            <button>Sign up</button>
+            <button className="input-btn">Sign up</button>
         </div>
     )
 }

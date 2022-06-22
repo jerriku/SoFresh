@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <header className="home-header">
-                <div class="header-image"></div>
+                <div className="header-image"></div>
                 <h1>SoFresh</h1>
             </header>
             <main>
